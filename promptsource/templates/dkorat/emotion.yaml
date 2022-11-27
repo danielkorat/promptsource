@@ -1,0 +1,16 @@
+dataset: emotion
+templates:
+  6eb62aee-a983-4571-9d49-9834e685ee13: !Template
+    answer_choices: Yes ||| No
+    id:  6eb62aee-a983-4571-9d49-9834e685ee13
+    jinja: "{{text_a}}. {{text_b}}. Are the sentences similar? \n|||\n
+      {{ answer_choices [label] }}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      languages:
+      - en
+      metrics:
+      - Accuracy
+      original_task: true
+    name: is_factual
+    reference: ''
